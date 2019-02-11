@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace FunctionalProgramming
 {
@@ -6,7 +7,12 @@ namespace FunctionalProgramming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while (true)            
+            {
+                MutableAndImmutable.MutateState();
+                MutableAndImmutable.NotMutateState();
+                Thread.Sleep(500);
+            }
         }
     }
 }
