@@ -9,9 +9,6 @@ namespace FunctionalProgramming
         {
             ParallelizePureFunctions.ParallelizeOperations();
 
-            Console.ReadLine();
-            return;
-
             while (true)            
             {
                 MutableAndImmutable.MutateState();
