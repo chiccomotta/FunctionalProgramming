@@ -7,6 +7,11 @@ namespace FunctionalProgramming
     {
         static void Main(string[] args)
         {
+            ParallelizePureFunctions.ParallelizeOperations();
+
+            Console.ReadLine();
+            return;
+
             while (true)            
             {
                 MutableAndImmutable.MutateState();
