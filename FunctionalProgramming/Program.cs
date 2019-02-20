@@ -26,8 +26,6 @@ namespace FunctionalProgramming
             var (duration, result) = StopwatchWrapper.Time<string>(func);
 
             Console.WriteLine($"duration: {duration} - result: {result}");
-            Console.ReadLine();
-            return;
 
             ParallelizePureFunctions.ParallelizeOperations();
 
