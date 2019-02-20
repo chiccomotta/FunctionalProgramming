@@ -8,7 +8,7 @@ namespace FunctionalProgramming
     {
         static void Main(string[] args)
         {
-            Func<string> action = () =>
+            Func<string> func = () =>
             {
                 string tmp = string.Empty;
 
@@ -23,7 +23,7 @@ namespace FunctionalProgramming
                 return tmp;
             };
 
-            var (duration, result) = StopwatchWrapper.Time<string>(action);
+            var (duration, result) = StopwatchWrapper.Time<string>(func);
 
             Console.WriteLine($"duration: {duration} - result: {result}");
             Console.ReadLine();
