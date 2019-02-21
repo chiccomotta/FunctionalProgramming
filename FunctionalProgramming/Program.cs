@@ -8,6 +8,13 @@ namespace FunctionalProgramming
     {
         static void Main(string[] args)
         {
+            var maybeHello = "hello".MaybeParse();
+            Console.WriteLine(maybeHello.HasValue());
+
+            var maybe10 = "10".MaybeParse();
+            Console.WriteLine(maybe10.HasValue());
+            Console.WriteLine(maybe10.Value);
+
             Func<string> func = () =>
             {
                 string tmp = string.Empty;
