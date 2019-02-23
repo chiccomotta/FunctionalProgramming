@@ -8,6 +8,16 @@ namespace FunctionalProgramming
     {
         static void Main(string[] args)
         {
+
+            Person p1 = new Person() {Name = "Gianni", CostoAnnuo = 10000M};
+            Person p2 = new Person() { Name = "Bruno", CostoAnnuo = 7540M };
+
+            // operator overload
+            var costo = p1 + p2;
+            Console.WriteLine($"Costo totale {costo}");
+
+
+            // Maybe
             var maybeHello = "hello".MaybeParse();
             Console.WriteLine(maybeHello.HasValue());
 
