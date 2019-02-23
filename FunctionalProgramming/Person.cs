@@ -12,5 +12,7 @@ namespace FunctionalProgramming
 
         public static decimal operator +(Person p1, Person p2) =>
             p1.CostoAnnuo + p2.CostoAnnuo;
+
+        public static implicit operator decimal(Person p1) => p1.CostoAnnuo;
     }
 }

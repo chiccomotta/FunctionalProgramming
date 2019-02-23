@@ -8,7 +8,6 @@ namespace FunctionalProgramming
     {
         static void Main(string[] args)
         {
-
             Person p1 = new Person() {Name = "Gianni", CostoAnnuo = 10000M};
             Person p2 = new Person() { Name = "Bruno", CostoAnnuo = 7540M };
 
@@ -16,6 +15,9 @@ namespace FunctionalProgramming
             var costo = p1 + p2;
             Console.WriteLine($"Costo totale {costo}");
 
+            // implicit cast operator
+            decimal costoAnnuo = p1;
+            Console.WriteLine($"Costo annuo {costoAnnuo}");
 
             // Maybe
             var maybeHello = "hello".MaybeParse();
