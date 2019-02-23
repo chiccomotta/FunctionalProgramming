@@ -20,10 +20,10 @@ namespace FunctionalProgramming
             Console.WriteLine($"Costo annuo {costoAnnuo}");
 
             // Maybe
-            var maybeHello = "hello".MaybeParse();
+            var maybeHello = "hello".MaybeParseInt();
             Console.WriteLine(maybeHello.HasValue());
 
-            var maybe10 = "10".MaybeParse();
+            var maybe10 = "10".MaybeParseInt();
             Console.WriteLine(maybe10.HasValue());
             Console.WriteLine(maybe10.Value);
 
