@@ -10,6 +10,7 @@ namespace FunctionalProgramming
         {
             Person p1 = new Person() {Name = "Gianni", CostoAnnuo = 10000M};
             Person p2 = new Person() { Name = "Bruno", CostoAnnuo = 7540M };
+            Person p3 = new Person() { Name = "Franco", CostoAnnuo = 10000M };
 
             // operator overload
             var costo = p1 + p2;
@@ -19,6 +20,15 @@ namespace FunctionalProgramming
             decimal costoAnnuo = p1;
             Console.WriteLine($"Costo annuo {costoAnnuo}");
 
+            // >  operator            
+            Console.WriteLine($"Person1 > Person2 ? {p1 > p2}");
+            
+            // < operator            
+            Console.WriteLine($"Person1 < Person2 ? {p1 < p2}");
+
+            // >= operator            
+            Console.WriteLine($"Person1 >= Person3 ? {p1 >= p3}");
+            
             // Maybe
             var maybeHello = "hello".MaybeParseInt();
             Console.WriteLine(maybeHello.HasValue());
