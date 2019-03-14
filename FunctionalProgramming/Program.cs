@@ -8,6 +8,21 @@ namespace FunctionalProgramming
     {
         static void Main(string[] args)
         {
+            GapsFinder.findGaps();
+
+
+
+
+
+
+
+
+
+
+
+
+            return;
+
             Person p1 = new Person() {Name = "Gianni", CostoAnnuo = 10000M};
             Person p2 = new Person() { Name = "Bruno", CostoAnnuo = 7540M };
             Person p3 = new Person() { Name = "Franco", CostoAnnuo = 10000M };
